@@ -1,0 +1,20 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="stellar",
+    version="0.1",
+    packages=find_packages(),
+    install_requires=[
+        'fastapi==0.95.2',
+        'uvicorn==0.22.0',
+        'requests==2.31.0',
+        'selenium==4.15.2',
+        '2captcha-python==1.1.3',
+        'pydantic==1.10.13',
+        'python-dotenv==1.0.0',
+        'anyio==3.7.1',
+        'starlette==0.27.0',
+        'httpx==0.24.1',
+    ],
+    python_requires='>=3.8,<3.11',
+)
