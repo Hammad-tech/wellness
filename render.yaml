@@ -1,8 +1,9 @@
 builds:
   - name: stellar
     env: python
-    buildCommand: ./build.sh
+    python:
+      version: 3.10.13
+    buildCommand: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
     runCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.10.13
