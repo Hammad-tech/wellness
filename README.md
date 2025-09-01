@@ -1,4 +1,4 @@
-# Stellar API
+# API
 
 A FastAPI application for handling authentication and API requests with Cloudflare protection bypass.
 
